@@ -1,0 +1,50 @@
+body{
+  background-color: black;
+  margin: 0 auto;
+}
+nav{
+  border-bottom: 0px solid lightblue;
+}
+
+#nav-ret{
+  display: none;
+  background-color: rgba(0,0,0,0);
+  color:white;
+  border:0px;
+}
+#nav-git{
+  float: right;
+animation: giro 2s linear;
+
+}
+
+.nav-link{
+animation: letter 1s linear;
+}
+@keyframes letter {
+  0%{  letter-spacing: 0.3em; transform: rotate(10deg);}
+  100%{  letter-spacing: 0em;transform: rotate(0deg);}
+}
+@keyframes giro {
+  0%{transform: rotate(0deg);
+  }
+
+  100%{transform: rotate(360deg);
+}
+
+}
+@media(max-width:992px){
+  #nav-ret{
+    display: inherit;
+  }
+  #nav-git{
+
+    float: inherit;
+
+  }
+  .nav-link{
+    margin-left: 0;
+    padding-left:0;
+
+  }
+}
