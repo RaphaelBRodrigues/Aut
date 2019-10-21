@@ -5,7 +5,17 @@ body{
 nav{
   border-bottom: 0px solid lightblue;
 }
+.main{
+  filter: blur(0px);
 
+  background-image: url("http://urci.org.br/wp-content/uploads/2017/05/plano-fundo.png");
+}
+.navbar-brand{
+  font-size: 2em;
+}
+.box{
+  filter: blur(40px);
+}
 #nav-ret{
   display: none;
   background-color: rgba(0,0,0,0);
@@ -17,7 +27,11 @@ nav{
 animation: giro 2s linear;
 
 }
-
+.btn{
+  width: 7em;
+  font-size:2em;
+  height: 3em;
+}
 .nav-link{
 animation: letter 1s linear;
 }
@@ -34,8 +48,13 @@ animation: letter 1s linear;
 
 }
 @media(max-width:992px){
+
+  .navbar-brand{
+    font-size: 3em;
+  }
   #nav-ret{
     display: inherit;
+    font-size: 3em;
   }
   #nav-git{
 
@@ -45,6 +64,7 @@ animation: letter 1s linear;
   .nav-link{
     margin-left: 0;
     padding-left:0;
+    font-size: 2em;
 
   }
 }
